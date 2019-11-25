@@ -5,7 +5,7 @@ using Prism.Mvvm;
 
 namespace PrismSample.ViewModels
 {
-    public class MainPageViewModel : BindableBase
+    public class MainPageViewModel : ViewModelBase
     {
     }
 }
