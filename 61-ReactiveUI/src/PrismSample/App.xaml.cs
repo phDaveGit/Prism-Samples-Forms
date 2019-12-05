@@ -16,7 +16,7 @@ namespace PrismSample
         {
             InitializeComponent();
 
-            var result = await NavigationService.NavigateAsync("MainPage");
+            var result = await NavigationService.NavigateAsync("LoginPage");
 
             if(!result.Success)
             {
@@ -28,6 +28,7 @@ namespace PrismSample
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
         }
     }
 }
