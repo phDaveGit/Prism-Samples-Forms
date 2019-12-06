@@ -6,13 +6,13 @@ using ReactiveUI;
 
 namespace PrismSample.ViewModels
 {
-    public class LoginPageViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase
     {
         private readonly INavigationService _navigationService;
         private string _username;
         private string _password;
 
-        public LoginPageViewModel(INavigationService navigationService)
+        public LoginViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
 

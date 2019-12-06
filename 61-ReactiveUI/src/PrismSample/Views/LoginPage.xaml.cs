@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace PrismSample.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPageBase<LoginPageViewModel>
+    public partial class LoginPage : ContentPageBase<LoginViewModel>
     {
         public LoginPage()
         {
