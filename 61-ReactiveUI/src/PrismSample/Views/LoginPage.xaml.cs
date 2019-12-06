@@ -21,6 +21,8 @@ namespace PrismSample.Views
             this.Bind(ViewModel, x => x.Username, x => x.Username.Text).DisposeWith(ViewBindings);
             this.Bind(ViewModel, x => x.Password, x => x.Password.Text).DisposeWith(ViewBindings);
             this.BindCommand(ViewModel, x => x.Login, x => x.LoginButton).DisposeWith(ViewBindings);
+            this.OneWayBind(ViewModel, x => x.IsLoading, x => x.Loading.IsVisible).DisposeWith(ViewBindings);
+            this.OneWayBind(ViewModel, x => x.IsLoading, x => x.Loading.IsRunning).DisposeWith(ViewBindings);
         }
     }
 }
