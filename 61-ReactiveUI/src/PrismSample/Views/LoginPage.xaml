@@ -67,7 +67,7 @@
         <Label HeightRequest="1" BackgroundColor="#E3E3E3" />
         <Label Text="Don't have an account? Sign up." VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
       </StackLayout>
-      <ActivityIndicator x:Name="Loading" />
+      <ActivityIndicator x:Name="Loading" Grid.Row="1" />
     </Grid>
   </ContentPage.Content>
 </views:ContentPageBase>

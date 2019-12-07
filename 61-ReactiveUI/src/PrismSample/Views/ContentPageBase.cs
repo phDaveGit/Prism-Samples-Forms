@@ -8,11 +8,5 @@ namespace PrismSample.Views
         where T : ViewModelBase
     {
         protected readonly CompositeDisposable ViewBindings = new CompositeDisposable();
-
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-            ViewBindings.Clear();
-        }
     }
 }
