@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<views:ContentViewBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:PrismSample.Views;assembly=PrismSample"
+             xmlns:viewModels="clr-namespace:PrismSample.ViewModels;assembly=PrismSample"
+             x:TypeArguments="viewModels:NugetPackageViewModel"
+             x:Class="PrismSample.Views.NugetViewCell">
+  <ContentView.Content>
+    <StackLayout>
+      <Label Text="Hello, world!"
+             VerticalOptions="CenterAndExpand"
+             HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+  </ContentView.Content>
+</views:ContentViewBase>
