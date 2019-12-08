@@ -18,7 +18,7 @@ namespace PrismSample.Services
             var source = new SourceRepository(package, providers);
 
             var filter = new SearchFilter(false);
-            var resource = await source.GetResourceAsync<PackageSearchResource>().ConfigureAwait(false);
+            var resource = await source.GetResourceAsync<PackageSearchResource>(token).ConfigureAwait(false);
             return await resource.SearchAsync(term, filter, 0, 10, null, token).ConfigureAwait(false);
         }
     }

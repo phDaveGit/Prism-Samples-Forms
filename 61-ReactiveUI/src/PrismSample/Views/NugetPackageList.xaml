@@ -9,7 +9,10 @@
   <ContentPage.Content>
     <StackLayout>
       <SearchBar x:Name="SearchBar" />
-      <ListView x:Name="NugetPackageListView">
+      <ListView x:Name="NugetPackageListView"
+                HasUnevenRows="True"
+                RowHeight="80"
+                IsPullToRefreshEnabled="True">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>

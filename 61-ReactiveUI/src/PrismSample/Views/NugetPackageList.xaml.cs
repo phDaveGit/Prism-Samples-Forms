@@ -14,7 +14,11 @@ namespace PrismSample.Views
         {
             InitializeComponent();
 
-            this.Bind(ViewModel, x => x.SearchText, x => x.SearchBar.Text).DisposeWith(ViewBindings);
+            this.Bind(ViewModel, x => x.SearchText, x => x.SearchBar.Text)
+                .DisposeWith(ViewBindings);
+            
+            this.OneWayBind(ViewModel, x => x.SearchResults, x => x.NugetPackageListView.ItemsSource)
+                .DisposeWith(ViewBindings);
 
             NugetPackageListView
                 .Events()

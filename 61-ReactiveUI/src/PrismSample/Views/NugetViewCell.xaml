@@ -7,10 +7,17 @@
              x:TypeArguments="viewModels:NugetPackageViewModel"
              x:Class="PrismSample.Views.NugetViewCell">
   <ContentView.Content>
-    <StackLayout>
-      <Label Text="Hello, world!"
-             VerticalOptions="CenterAndExpand"
-             HorizontalOptions="CenterAndExpand" />
-    </StackLayout>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Image />
+    <Label x:Name="PackageName" Grid.Row="2" Grid.Column="0" />
+  </Grid>
   </ContentView.Content>
 </views:ContentViewBase>
