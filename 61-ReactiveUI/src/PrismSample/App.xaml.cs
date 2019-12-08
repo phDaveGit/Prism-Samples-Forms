@@ -1,5 +1,6 @@
 ﻿using System;
 using Prism.Ioc;
+using PrismSample.Services;
 using PrismSample.ViewModels;
 using PrismSample.Views;
 using Xamarin.Forms;
@@ -26,9 +27,14 @@ namespace PrismSample
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            // Register Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginViewModel>();
+            containerRegistry.RegisterForNavigation<NugetPackageList, NugetPackageListViewModel>();
+
+            // Register Services
+            containerRegistry.RegisterSingleton<INugetPackageService, NugetPackageService>();
         }
     }
 }
