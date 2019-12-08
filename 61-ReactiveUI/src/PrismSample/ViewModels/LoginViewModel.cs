@@ -55,11 +55,10 @@ namespace PrismSample.ViewModels
         private async Task ExecuteLogin()
         {
             await Observable.Return(Unit.Default).Delay(TimeSpan.FromSeconds(3));
-            await _navigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(MainPage)}");
+            await _navigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(NugetPackageList)}");
         }
 
-        private static bool ValidateEmail(string email) =>
-            !string.IsNullOrEmpty(email) && email.Length > 2;
+        private static bool ValidateEmail(string email) => !string.IsNullOrEmpty(email) && email.Length > 2;
 
         private static bool ValidatePassword(string password) => !string.IsNullOrEmpty(password) && password.Length > 5;
     }

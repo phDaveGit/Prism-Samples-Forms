@@ -5,7 +5,7 @@
                        xmlns:views="clr-namespace:PrismSample.Views;assembly=PrismSample"
                        xmlns:viewModels="clr-namespace:PrismSample.ViewModels;assembly=PrismSample"
                        x:TypeArguments="viewModels:NugetPackageListViewModel"
-                       x:Class="PrismSample.ViewModels.NugetPackageList">
+                       x:Class="PrismSample.Views.NugetPackageList">
   <ContentPage.Content>
     <StackLayout>
       <SearchBar x:Name="SearchBar" />
